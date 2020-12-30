@@ -1,2 +1,2 @@
 # PDO-MSSQL
- Conexão PDO para MSSQL (Microsoft SQL Server)
+ Conexão PDO para MySQL e MSSQL (Microsoft SQL Server)
