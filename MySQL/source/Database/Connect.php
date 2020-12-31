@@ -8,10 +8,10 @@ use \PDOException;
 
 class Connect
 {
-    private const SERVER = "localhost\SQLEXPRESS";
-    private const USER = "sa";
+    private const HOST = "localhost";
+    private const USER = "root";
+    private const DBNAME = "PDO";
     private const PASSWORD = "";
-    private const DATABASE = "PDO";
 
     /**
      * OPÇÕES DE INICIALIZAÇÃO
@@ -38,7 +38,7 @@ class Connect
         if (empty(self::$instance)) {
             try {
                 self::$instance = new PDO(
-                    "sqlsrv:Server=" . self::SERVER . ";Database=" . self::DATABASE,
+                    "mysql:host=" . self::HOST . ";dbname=" . self::DBNAME,
                     self::USER,
                     self::PASSWORD,
                     self::OPTIONS

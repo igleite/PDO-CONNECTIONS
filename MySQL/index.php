@@ -12,13 +12,14 @@
 
 <div class="container " style="margin-bottom: 20em">
 
-    <h1 class="pt-3 pb-2">[ BANCO DE DADOS MSSQL ]</h1>
+    <h1 class="pt-3 pb-2">[ BANCO DE DADOS MySQL ]</h1>
 
     <?php
 
     require __DIR__ . "/source/autoload.php";
 
     use Source\Database\Connect;
+
 
     /* ************************************************** */
     /*                   SELECT                           */
